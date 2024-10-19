@@ -48,7 +48,7 @@ export default function ArticlesList() {
         defaultPageSize={5}
         showSizeChanger={false}
         total={articlesCount}
-        style={{ textAlign: 'center', paddingBottom: '14px' }}
+        style={{ justifyContent: 'center', paddingBottom: '14px' }}
         onChange={handlePagination}
       />
     </div>

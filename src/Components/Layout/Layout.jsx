@@ -17,7 +17,6 @@ export default function Layout() {
   const articlesLoading = useSelector(appSelectors.articlesLoading);
 
   const loading = articlesLoading ?? user.loading;
-
   return username ? (
     <>
       <header>

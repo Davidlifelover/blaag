@@ -7,7 +7,6 @@ export const fetchArticles = createAsyncThunk('articles/fetchArticles', async (p
   const token = localStorage.getItem('token');
 
   const response = await fetch(`https://blog-platform.kata.academy/api/articles?limit=5&offset=${(page - 1) * 5}`, {
-    mode: 'no-cors',
     headers: {
       Authorization: `Token ${token}`,
     },
