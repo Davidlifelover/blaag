@@ -4,7 +4,7 @@ let userObj = null;
 
 export const fetchUserAuth = createAsyncThunk('user/fetchUserAuth', async (data, { rejectWithValue }) => {
   try {
-    const url = `https://blog.kata.academy/api/users`;
+    const url = `https://blog-platform.kata.academy/api/users`;
 
     const response = await fetch(url, {
       headers: {
